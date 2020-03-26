@@ -1,4 +1,4 @@
-from ch01 import ex_01_01
+from src.ch01 import ex_01_01
 
 
 def test_is_multiple():
