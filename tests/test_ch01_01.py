@@ -1,12 +1,15 @@
+import ch01
+
+
 class TestChapter01:
     def test_is_multiple(self):
-        from src.ch01.ex_01_01 import is_multiple
+        from ch01.ex_01_01 import is_multiple
 
         assert is_multiple(100, 10) == True
         assert is_multiple(20, 100) == False
 
     def test_is_even(self):
-        from src.ch01.ex_01_02 import is_even
+        from ch01.ex_01_02 import is_even
 
         assert is_even(100) == True
         assert is_even(301) == False
@@ -14,7 +17,7 @@ class TestChapter01:
         assert is_even(-101) == False
 
     def test_minmax(self):
-        from src.ch01.ex_01_03 import minmax
+        from ch01.ex_01_03 import minmax
         import random
 
         data = [15, 60, 80, 120, 30, 10]
@@ -24,7 +27,7 @@ class TestChapter01:
         assert minmax(data) == (-15, 121)
 
     def test_sqrt_list(self):
-        from src.ch01.ex_01_04 import sqrt_list
+        from ch01.ex_01_04 import sqrt_list
 
-        assert sqrt_list(5) == [1, 4, 9, 16]
-        assert sqrt_list(10) == [1, 4, 9, 16, 25, 36, 49, 64, 81]
+        assert sqrt_list(5) == 30
+        assert sqrt_list(10) == 285

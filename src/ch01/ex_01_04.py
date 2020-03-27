@@ -1,12 +1,8 @@
-from typing import List
 
-
-def sqrt_list(n: int) -> List:
+def sqrt_list(n: int) -> int:
     """
-    Return the sq
+    Return the sum of the squares of the integer less than n.
+    """
 
-    sqrts = []
-    for number in range(1, n):
-        sqrts.append(number ** 2)
-
-    return sqrts
+    sqrts = [n * n for n in range(1, n)]
+    return sum(sqrts)
