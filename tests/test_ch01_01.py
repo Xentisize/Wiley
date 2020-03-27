@@ -31,3 +31,9 @@ class TestChapter01:
 
         assert sqrt_list(5) == 30
         assert sqrt_list(10) == 285
+
+    def test_sqrt_odd_list(self):
+        from ch01.ex_01_06 import sqrt_odd_list
+
+        assert sqrt_odd_list(5) == 10
+        assert sqrt_odd_list(10) == 165
